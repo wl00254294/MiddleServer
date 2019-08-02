@@ -35,10 +35,10 @@ public class ReportServiceImpl implements ReportService{
 				if(j==0)
 				{
 					tmp.setValue((j+i+1)*10);
-					tmp.setRate("This Week");
-				}else{
+					tmp.setRate("本周");
+				}else if(j==1){
 					tmp.setValue((j+i+1)*10);
-					tmp.setRate("Last Week");					
+					tmp.setRate("上周");					
 				}
 				k.add(tmp);
 			}
@@ -66,10 +66,10 @@ public class ReportServiceImpl implements ReportService{
 				if(j==0)
 				{
 					tmp.setValue((j+i+1)*10);
-					tmp.setRate("This Month");
+					tmp.setRate("本周");
 				}else{
 					tmp.setValue((j+i+1)*10);
-					tmp.setRate("Last Month");					
+					tmp.setRate("上周");					
 				}
 				k.add(tmp);
 			}
@@ -102,56 +102,56 @@ public class ReportServiceImpl implements ReportService{
     		 if(j ==0)
     		 {
     			 costinfo.setMap("tw"); 
-    			 costinfo.setName_tw("台灣");
-    			 costinfo.setName_cn("台灣高校");
-    			 costinfo.setName_jp("台灣高校");
+    			 costinfo.setName_tw("飲食");
+    			 costinfo.setName_cn("台灣");
+    			 costinfo.setName_jp("台灣");
     			 costinfo.setName_en("Taiwan");
     		 } else if(j == 1)
     		 {
     			 costinfo.setMap("hk"); 
-    			 costinfo.setName_tw("香港");
+    			 costinfo.setName_tw("電玩");
     			 costinfo.setName_cn("香港");
     			 costinfo.setName_jp("香港");
     			 costinfo.setName_en("Hong Kong");    			 
     		 } else if(j == 2)
     		 {
-    			 costinfo.setMap("jr"); 
-    			 costinfo.setName_tw("台灣國中");
-    			 costinfo.setName_cn("台灣中學");
-    			 costinfo.setName_jp("台灣中學");
-    			 costinfo.setName_en("Taiwan JHS");
+    			 costinfo.setMap("cn"); 
+    			 costinfo.setName_tw("車費");
+    			 costinfo.setName_cn("中國");
+    			 costinfo.setName_jp("中國");
+    			 costinfo.setName_en("Chinese");
     		 }else if(j == 3)
     		 {
     			 costinfo.setMap("my"); 
-    			 costinfo.setName_tw("馬來西亞");
-    			 costinfo.setName_cn("馬來西亞");
+    			 costinfo.setName_tw("繳稅");
+    			 costinfo.setName_cn("馬國");
     			 costinfo.setName_jp("マレーシア");
     			 costinfo.setName_en("Malysia");
     		 }else if(j == 4)
     		 {
     			 costinfo.setMap("bn"); 
-    			 costinfo.setName_tw("汶萊");
+    			 costinfo.setName_tw("生活品");
     			 costinfo.setName_cn("文萊");
     			 costinfo.setName_jp("ブルネイ");
     			 costinfo.setName_en("Brunei");
     		 }else if(j == 5)
     		 {
     			 costinfo.setMap("sg"); 
-    			 costinfo.setName_tw("新加坡");
+    			 costinfo.setName_tw("應酬");
     			 costinfo.setName_cn("新加坡");
     			 costinfo.setName_jp("シンガポール");
     			 costinfo.setName_en("Singapore");
     		 }else if(j == 6)
     		 {
     			 costinfo.setMap("mo"); 
-    			 costinfo.setName_tw("澳門");
+    			 costinfo.setName_tw("房租");
     			 costinfo.setName_cn("澳門");
     			 costinfo.setName_jp("マカオ");
     			 costinfo.setName_en("Macau");
     		 }else if(j == 7)
     		 {
     			 costinfo.setMap("id"); 
-    			 costinfo.setName_tw("印尼");
+    			 costinfo.setName_tw("其他");
     			 costinfo.setName_cn("印尼");
     			 costinfo.setName_jp("インドネシア");
     			 costinfo.setName_en("Indonesia");
