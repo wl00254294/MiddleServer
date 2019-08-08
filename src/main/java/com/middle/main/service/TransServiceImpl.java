@@ -20,7 +20,7 @@ public class TransServiceImpl implements TransService {
 		List<TranscationInfo> list=new ArrayList<TranscationInfo>();
 		if("admin".equals(username))
 		{
-			for(int i=0;i<4;i++)
+			for(int i=0;i<14;i++)
 			{
 				TranscationInfo tif=new TranscationInfo();
 				tif.setOrderno("#1234");

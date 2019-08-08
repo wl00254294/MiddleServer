@@ -66,10 +66,10 @@ public class ReportServiceImpl implements ReportService{
 				if(j==0)
 				{
 					tmp.setValue((j+i+1)*10);
-					tmp.setRate("本周");
+					tmp.setRate("本月");
 				}else{
 					tmp.setValue((j+i+1)*10);
-					tmp.setRate("上周");					
+					tmp.setRate("上月");					
 				}
 				k.add(tmp);
 			}

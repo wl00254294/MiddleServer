@@ -22,7 +22,7 @@ public class NotifyServiceImpl implements NotifyService{
 				NotifyInfo notify=new NotifyInfo();
 				notify.setPlateform("Plateform"+Integer.toString((i+1)));
 				notify.setMessage("You receive message from "+ Integer.toString(i+1));
-				notify.setTransdate("2018-07-11");
+				notify.setTransdate("2018-07-22");
 				list.add(notify);
 			}
 		}

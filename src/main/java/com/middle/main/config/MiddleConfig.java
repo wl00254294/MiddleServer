@@ -22,14 +22,14 @@ import org.springframework.data.redis.core.RedisTemplate;
 @ComponentScan(basePackages = "com.middle.main")
 public class MiddleConfig {
 	
-	//@Value("${redis.hostname}")
-    private String redisHostName="test-redis-001.iwisqr.0001.usw1.cache.amazonaws.com";
+	@Value("${redis.hostname}")
+    private String redisHostName;
  
-    //@Value("${redis.port}")
-    private int redisPort=6379;
+    @Value("${redis.port}")
+    private int redisPort;
  
-    //@Value("${redis.prefix}")
-    private String redisPrefix="testing";
+    @Value("${redis.prefix}")
+    private String redisPrefix;
 	
 	
 	@Bean  
