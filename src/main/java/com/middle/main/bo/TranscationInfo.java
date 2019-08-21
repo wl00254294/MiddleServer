@@ -1,11 +1,19 @@
 package com.middle.main.bo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 //for dashboard.html transcation records
+@ApiModel(description ="額度轉換資訊Entity")
 public class TranscationInfo {
 	
+	@ApiModelProperty("編號")
 	private String orderno;
+	
+	@ApiModelProperty("狀態")
 	private String state;
+	
+	
 	private String operator;
 	private String locate;
 	private String distance;

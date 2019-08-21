@@ -15,8 +15,8 @@ public class NotifyServiceImpl implements NotifyService{
 	public List<NotifyInfo> getNotifyInfo( String username)
 	{
 		List<NotifyInfo> list=new ArrayList<NotifyInfo>();
-		if("admin".equals(username))
-		{
+		//if("admin".equals(username))
+		//{
 			for(int i=0;i<5;i++)
 			{
 				NotifyInfo notify=new NotifyInfo();
@@ -25,7 +25,7 @@ public class NotifyServiceImpl implements NotifyService{
 				notify.setTransdate("2018-07-22");
 				list.add(notify);
 			}
-		}
+		//}
 		return list;
 	}
 

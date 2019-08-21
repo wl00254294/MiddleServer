@@ -2,8 +2,16 @@ package com.middle.main.bo;
 
 import java.util.List;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description ="消費資料Entity")
 public class CostData {
+ 
+@ApiModelProperty("平台名稱")
  private String platename;
+
+@ApiModelProperty("消費細節")
  List<CostInfo> info;
  
  

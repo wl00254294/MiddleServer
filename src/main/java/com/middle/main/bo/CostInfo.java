@@ -1,13 +1,33 @@
 package com.middle.main.bo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description ="消費細節Entity")
 public class CostInfo {
+	
+  @ApiModelProperty("編號")
   private String id;
+  
+  @ApiModelProperty("消費項目簡寫")
   private String map;
+  
+  @ApiModelProperty("消費金額")
   private int count;
+  
+  @ApiModelProperty("目前暫留")
   private int badge;
+  
+  @ApiModelProperty("消費項目繁中")
   private String name_tw;
+  
+  @ApiModelProperty("消費項目簡中")
   private String name_cn;
+  
+  @ApiModelProperty("消費項目日文")
   private String name_jp;
+  
+  @ApiModelProperty("消費項目英文")
   private String name_en;
   
 public String getId() {

@@ -18,8 +18,8 @@ public class TransServiceImpl implements TransService {
 	{
 		logger.info("====call getTransInfo Service====");
 		List<TranscationInfo> list=new ArrayList<TranscationInfo>();
-		if("admin".equals(username))
-		{
+		//if("admin".equals(username))
+		//{
 			for(int i=0;i<14;i++)
 			{
 				TranscationInfo tif=new TranscationInfo();
@@ -41,7 +41,7 @@ public class TransServiceImpl implements TransService {
 				tif.setDue("2019-08-09");
 				list.add(tif);
 			}
-		}
+		//}
 		return list;
 	}
 
